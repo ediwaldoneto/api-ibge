@@ -3,8 +3,8 @@ package br.com.ibge.model;
 public class UF {
 
 	private int id;
-	private String nome;
 	private String sigla;
+	private String nome;
 	private Regiao regiao;
 
 	public int getId() {

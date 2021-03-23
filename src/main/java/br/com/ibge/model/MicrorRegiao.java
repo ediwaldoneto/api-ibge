@@ -4,7 +4,7 @@ public class MicrorRegiao {
 
 	private int id;
 	private String nome;
-	private MesorRegiao mesorRegiao;
+	private MesorRegiao mesorregiao;
 
 	public int getId() {
 		return id;
@@ -22,12 +22,12 @@ public class MicrorRegiao {
 		this.nome = nome;
 	}
 
-	public MesorRegiao getMesorRegiao() {
-		return mesorRegiao;
+	public MesorRegiao getMesorregiao() {
+		return mesorregiao;
 	}
 
-	public void setMesorRegiao(MesorRegiao mesorRegiao) {
-		this.mesorRegiao = mesorRegiao;
+	public void setMesorregiao(MesorRegiao mesorregiao) {
+		this.mesorregiao = mesorregiao;
 	}
 
 }

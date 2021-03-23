@@ -12,4 +12,6 @@ public class ClientConfiguration {
 	Logger.Level feignLoggerLevel() {
 		return Logger.Level.FULL;
 	}
+	
+
 }

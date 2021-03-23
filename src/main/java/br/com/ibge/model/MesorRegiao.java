@@ -1,9 +1,12 @@
 package br.com.ibge.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class MesorRegiao {
 
 	private int id;
 	private String nome;
+	@JsonProperty("UF")
 	private UF uf;
 
 	public int getId() {

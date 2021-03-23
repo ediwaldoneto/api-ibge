@@ -2,12 +2,12 @@ package br.com.ibge.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class RegiaoImediata {
+public class RegiaoIntermediara {
 
 	private int id;
 	private String nome;
-	@JsonProperty("regiao-intermediaria")
-	private RegiaoIntermediara regiaointermediara;
+	@JsonProperty("UF")
+	private UF uf;
 
 	public int getId() {
 		return id;
@@ -25,12 +25,12 @@ public class RegiaoImediata {
 		this.nome = nome;
 	}
 
-	public RegiaoIntermediara getRegiaointermediara() {
-		return regiaointermediara;
+	public UF getUf() {
+		return uf;
 	}
 
-	public void setRegiaointermediara(RegiaoIntermediara regiaointermediara) {
-		this.regiaointermediara = regiaointermediara;
+	public void setUf(UF uf) {
+		this.uf = uf;
 	}
 
 }

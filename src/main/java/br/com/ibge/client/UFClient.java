@@ -9,13 +9,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import br.com.ibge.model.UF;
 
-
-@FeignClient(url = "https://servicodados.ibge.gov.br/api/v1/localidades/estados/", name = "ibge")
+@FeignClient(url = "https://servicodados.ibge.gov.br/api/v1/localidades/estados/", name = "UF")
 public interface UFClient {
 
 	@RequestMapping(method = RequestMethod.GET, value = "/{uf}", consumes = "application/json")
 	UF findByUF(@PathVariable("uf") String uf);
 
-	@RequestMapping(method = RequestMethod.GET,  consumes = "application/json")
+	@RequestMapping(method = RequestMethod.GET, consumes = "application/json")
 	List<UF> findAll();
 }

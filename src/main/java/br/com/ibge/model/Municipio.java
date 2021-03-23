@@ -1,11 +1,14 @@
 package br.com.ibge.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class Municipio {
 
 	private int id;
 	private String nome;
-	private MicrorRegiao microrRegiao;
-	private RegiaoImediata regiaoImediata;
+	private MicrorRegiao microrregiao;
+	@JsonProperty("regiao-imediata")
+	private RegiaoImediata regiaoimediata;
 
 	public int getId() {
 		return id;
@@ -23,20 +26,20 @@ public class Municipio {
 		this.nome = nome;
 	}
 
-	public MicrorRegiao getMicrorRegiao() {
-		return microrRegiao;
+	public MicrorRegiao getMicrorregiao() {
+		return microrregiao;
 	}
 
-	public void setMicrorRegiao(MicrorRegiao microrRegiao) {
-		this.microrRegiao = microrRegiao;
+	public void setMicrorregiao(MicrorRegiao microrregiao) {
+		this.microrregiao = microrregiao;
 	}
 
-	public RegiaoImediata getRegiaoImediata() {
-		return regiaoImediata;
+	public RegiaoImediata getRegiaoimediata() {
+		return regiaoimediata;
 	}
 
-	public void setRegiaoImediata(RegiaoImediata regiaoImediata) {
-		this.regiaoImediata = regiaoImediata;
+	public void setRegiaoimediata(RegiaoImediata regiaoimediata) {
+		this.regiaoimediata = regiaoimediata;
 	}
 
 }

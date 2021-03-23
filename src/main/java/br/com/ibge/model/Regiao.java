@@ -3,8 +3,8 @@ package br.com.ibge.model;
 public class Regiao {
 
 	private int id;
-	private String nome;
 	private String sigla;
+	private String nome;
 
 	public int getId() {
 		return id;
