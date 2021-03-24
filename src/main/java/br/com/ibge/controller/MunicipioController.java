@@ -17,7 +17,7 @@ public class MunicipioController {
 	@Autowired
 	private MunicipioClient municipioClient;
 
-	@GetMapping("/estados/{uf}/municipio")
+	@GetMapping("/estados/{uf}/municipios")
 	public ResponseEntity<List<Municipio>> getMunicipio(@PathVariable String uf) {
 
 		List<Municipio> m = municipioClient.findMunicipio(uf);
