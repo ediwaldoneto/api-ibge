@@ -17,7 +17,7 @@ public class UFController {
 	@Autowired
 	private UFClient service;
 
-	@GetMapping("/estados/{uf}")
+	@GetMapping("/v1/estados/{uf}")
 	public ResponseEntity<UF> getUF(@PathVariable String uf) {
 		
 		UF uf2 = service.findByUF(uf);
@@ -25,7 +25,7 @@ public class UFController {
 		return uf2 != null ? ResponseEntity.ok().body(uf2) : ResponseEntity.notFound().build();
 	}
 	
-	@GetMapping("/estados")
+	@GetMapping("/v1/estados")
 	public ResponseEntity<List<UF>> getAll() {
 		
 		List<UF> uf2 = service.findAll();
